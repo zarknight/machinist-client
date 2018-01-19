@@ -1,0 +1,34 @@
+.k-categories {
+  padding: 40rpx 10rpx;
+  background-color: #fff;
+}
+
+.k-topbar {
+  padding: 0 10rpx;
+  font-size: 16px;
+  color: #999;
+}
+
+.k-topbar__title {
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding-left: 20rpx;
+  color: #5f99f4;
+  border-color: #5f99f4;
+}
+
+.k-posts {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.k-post {
+  padding: 20px 15px;
+}
+
+.k-post__icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}

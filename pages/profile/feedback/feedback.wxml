@@ -1,0 +1,17 @@
+<view class="k-feedback">
+  <view class="k-feedback-block">
+    感谢您关注和使用《爱摸车》小程序。
+  </view>
+
+  <view class="k-feedback-block">
+    如果您在使用过程中发现任何问题，或是对我们的小程序有好的想法和建议， 亦或是寻求商务合作，非常欢迎直接点击下方的绿色按钮，给我们发送消息、截图等。
+  </view>
+
+  <view class="k-feedback-block">
+    我们会在9:00~23:00在线等你！
+  </view>
+
+  <button class="weui-btn" type="primary" open-type="contact" session-from="weapp-feedback">
+    写反馈给我们
+  </button>
+</view>

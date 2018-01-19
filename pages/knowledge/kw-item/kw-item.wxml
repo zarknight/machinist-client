@@ -1,0 +1,30 @@
+<import src="/vendor/wxParse/wxParse.wxml" />
+
+<view class="k-article weui-article" hidden="{{!title}}">
+  <view class="k-article__title weui-article__h1">{{title}}</view>
+
+  <view class="weui-flex">
+    <view class="k-article__info weui-flex__item">文章更新于：{{date}}</view>
+    <button class="k-share" open-type="share" size="mini">
+      <image class="k-share__icon" src="/assets/images/article/share-icon-g.png"></image>
+    </button>
+  </view>
+
+  <view class="weui-article__section">
+    <template is="wxParse" data="{{wxParseData: article.nodes}}" />
+  </view>
+
+  <view class="k-bottom-bar weui-flex">
+    <view class="weui-flex__item"></view>
+
+    <view wx:if="{{!isStar}}" class="k-star" bindtap="toggleStar">
+      <image class="k-star__icon" src="/assets/images/article/star-icon-off.png"></image>
+      <text>收藏文章</text>
+    </view>
+
+    <view wx:if="{{isStar}}" class="k-star" bindtap="toggleStar">
+      <image class="k-star__icon" src="/assets/images/article/star-icon-on.png"></image>
+      <text>取消收藏</text>
+    </view>
+  </view>
+</view>

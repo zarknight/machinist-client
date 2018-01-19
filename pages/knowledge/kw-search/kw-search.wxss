@@ -1,0 +1,40 @@
+/* -------------- Banner ---------------  */
+
+.k-banner {
+  background-color: #fff;
+}
+
+.weui-search-bar {
+  background-color: #fff;
+  border: none;
+}
+
+.weui-search-bar__form {
+  border-radius: 15px;
+  border-color: #d9d9d9;
+  background-color: #e8e8e8;
+}
+
+.weui-search-bar__label {
+  background-color: #e8e8e8;
+}
+
+.weui-search-bar__cancel-btn {
+  color: #d98d9c;
+}
+
+.input-placeholder {
+  color: #ccc;
+}
+
+/* -------------- Main ---------------  */
+
+.k-posts {
+  margin-top: 0rpx;
+  font-size: 16px;
+}
+
+.k-post {
+  color: #999;
+  padding: 12px 15px 12px 35px;
+}

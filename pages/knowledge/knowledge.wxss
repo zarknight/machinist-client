@@ -1,0 +1,116 @@
+/* -------------- Banner ---------------  */
+
+.k-banner, .weui-search-bar {
+  background-color: #c61929;
+}
+
+.k-banner {
+  padding-top: 30rpx;
+  padding-bottom: 10rpx;
+}
+
+.weui-search-bar {
+  border: none;
+}
+
+.weui-search-bar__form {
+  background-color: #fff;
+  border-color: #d9d9d9;
+  border-radius: 40px;
+}
+
+.weui-search-bar__input {
+  height: 40px;
+  line-height: 40px;
+}
+
+.weui-search-bar__label {
+  background-color: #fff;
+  line-height: 40px;
+  color: #ccc;
+}
+
+/* -------------- Main ---------------  */
+
+.k-nav-blocks {
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.k-nav-block {
+  background-color: #fff;
+  padding: 10rpx;
+}
+
+.k-intro {
+  padding: 15rpx;
+  align-items: center;
+}
+
+.k-intro__info {
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding-left: 20rpx;
+}
+
+.k-intro__title {
+  font-size: 18px;
+}
+
+.k-intro__desc {
+  font-size: 14px;
+  color: #999;
+}
+
+.k-intro__icon {
+  width: 35px;
+  height: 35px;
+}
+
+.k-navs {
+  border: none;
+  padding: 10rpx;
+}
+
+.k-nav-outer {
+  border: none;
+  padding: 12rpx;
+  width: 50%;
+}
+
+.k-nav-inner {
+  border-radius: 20rpx;
+}
+
+.k-nav-icon-wrap {
+  align-items: center;
+  padding: 8rpx;
+  border-radius: 14rpx 0 0 14rpx;
+}
+
+.k-nav-item-wrap {
+  align-items: center;
+  border: 2rpx solid #e7e7e7;
+  border-left: none;
+  border-radius: 0 14rpx 14rpx 0;
+  padding-left: 30rpx;
+}
+
+.k-nav-label-m, .k-nav-label-s {
+  text-align: left;
+}
+
+.k-nav-label-m {
+  font-size: 16px;
+}
+
+.k-nav-label-s {
+  font-size: 12px;
+  color: #999;
+  margin-top: 0rpx;
+  margin-bottom: 8rpx;
+}
+
+.k-nav_active {
+  background: transparent;
+}

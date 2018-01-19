@@ -1,0 +1,23 @@
+<view hidden="{{!categories.length}}" class="k-categories">
+  <view class="k-topbar weui-flex">
+    <view class="k-topbar__title weui-flex__item" style="border-color:{{theme}};color:{{theme}}">分类目录</view>
+    <!--<view class="k-topbar__toggle">全部</view>-->
+  </view>
+  <block wx:for="{{categories}}" wx:for-item="category" wx:key="id">
+    <view class="k-category" style="color:{{theme}};border-color:{{theme}};{{selectedCate == category.id ? 'color:#fff;background-color:' + theme + ';' : ''}}" id="{{category.id}}" data-count="{{category.count}}" bindtap="selectCategory">
+      {{category.name}}
+    </view>
+  </block>
+</view>
+
+<view hidden="{{!posts.length}}" class="k-posts weui-cells">
+  <block wx:for="{{posts}}" wx:for-item="post" wx:for-index="i" wx:key="id">
+    <navigator class="k-post weui-cell" hover-class="weui-cell_active" url="/pages/knowledge/kw-item/kw-item?id={{post.id}}">
+      <view class="weui-cell__hd">
+        <image class="k-post__icon" src="/assets/images/article/article-hd.png"></image>
+      </view>
+      <view class="weui-cell__bd">{{post.title.rendered}}</view>
+    </navigator>
+  </block>
+  <view class="k-post-emp"></view>
+</view>

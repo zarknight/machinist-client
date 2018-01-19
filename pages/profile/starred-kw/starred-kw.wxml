@@ -1,0 +1,16 @@
+<view class="k-categories">
+  <view class="k-topbar weui-flex">
+    <view class="k-topbar__title weui-flex__item">我收藏的文章</view>
+  </view>
+</view>
+
+<view class="k-posts weui-cells">
+  <block wx:for="{{posts}}" wx:for-item="post" wx:for-index="i" wx:key="id">
+    <navigator class="k-post weui-cell" hover-class="weui-cell_active" url="/pages/knowledge/kw-item/kw-item?id={{post.id}}">
+      <view class="weui-cell__hd">
+        <image class="k-post__icon" src="/assets/images/article/article-hd.png"></image>
+      </view>
+      <view class="weui-cell__bd">{{post.title.rendered}}</view>
+    </navigator>
+  </block>
+</view>

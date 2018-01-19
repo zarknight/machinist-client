@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/knowledge/knowledge",
+    "pages/knowledge/kw-list/kw-list",
+    "pages/knowledge/kw-item/kw-item",
+    "pages/knowledge/kw-search/kw-search",
+    "pages/profile/profile",
+    "pages/profile/starred-kw/starred-kw",
+    "pages/profile/feedback/feedback"
+  ],
+  "window": {
+    "navigationBarTitleText": "爱摸车",
+    "backgroundTextStyle": "dark",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#c61929",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "text": "知车",
+        "pagePath": "pages/knowledge/knowledge",
+        "iconPath": "assets/images/tabbar/discover.png",
+        "selectedIconPath": "assets/images/tabbar/discover-s.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/profile/profile",
+        "iconPath": "assets/images/tabbar/my.png",
+        "selectedIconPath": "assets/images/tabbar/my-s.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

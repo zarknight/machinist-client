@@ -1,0 +1,79 @@
+<!-- Profile Info -->
+
+<view class="profile-head">
+  <image class="info-avatar" background-size="cover" src="{{userInfo.avatarUrl || userInfoDefault.avatarUrl}}"></image>
+  <view class="info-detail">
+    <text wx:if="{{userInfo}}" class="info-nickname">{{userInfo.nickName}}</text>
+    <button wx:if="{{!userInfo}}" class="weui-btn mini-btn info-reauth" size="mini" open-type="getUserInfo" bindgetuserinfo="requestAuth">未授权用户</button>
+  </view>
+</view>
+
+<!-- Section 1  -->
+
+<view class="profile-menu weui-cells weui-cells_after-title">
+  <!--<navigator url="" class="menu-item weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image class="profile-icon" src="/assets/images/profile/m1.png"></image>
+    </view>
+    <view class="weui-cell__bd">账户</view>
+    <view class="weui-cell__ft">我的账户信息</view>
+  </navigator>-->
+
+  <navigator url="/pages/profile/starred-kw/starred-kw" class="menu-item weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image class="profile-icon" src="/assets/images/profile/m2.png"></image>
+    </view>
+    <view class="weui-cell__bd">收藏的文章</view>
+    <view class="weui-cell__ft">知识库文章</view>
+  </navigator>
+</view>
+
+<!-- Section 2  -->
+
+<view class="profile-menu weui-cells weui-cells_after-title">
+  <!--
+  <navigator url="" class="menu-item weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image class="profile-icon" src="/assets/images/profile/follow.png"></image>
+    </view>
+    <view class="weui-cell__bd">关注</view>
+    <view class="weui-cell__ft">关注的信息、机械师等</view>
+  </navigator>
+
+  <navigator url="" class="menu-item weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image class="profile-icon" src="/assets/images/profile/m4.png"></image>
+    </view>
+    <view class="weui-cell__bd">问题</view>
+    <view class="weui-cell__ft">我提出的问题集</view>
+  </navigator>
+  -->
+
+  <view class="menu-item weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="clearCache">
+    <view class="weui-cell__hd">
+      <image class="profile-icon" src="/assets/images/profile/clear.png"></image>
+    </view>
+    <view class="weui-cell__bd">清空缓存</view>
+    <view class="weui-cell__ft">{{cacheSize}}KB</view>
+  </view>
+
+  <view class="menu-item weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="openSettings">
+    <view class="weui-cell__hd">
+      <image class="profile-icon" src="/assets/images/profile/settings.png"></image>
+    </view>
+    <view class="weui-cell__bd">小程序设置</view>
+    <view class="weui-cell__ft">授权设置</view>
+  </view>
+</view>
+
+<!-- Section 2  -->
+
+<view class="profile-menu weui-cells weui-cells_after-title">
+  <navigator url="/pages/profile/feedback/feedback" class="menu-item weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image class="profile-icon" src="/assets/images/profile/m4.png"></image>
+    </view>
+    <view class="weui-cell__bd">意见反馈</view>
+    <view class="weui-cell__ft">反馈意见、问题</view>
+  </navigator>
+</view>

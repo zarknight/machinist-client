@@ -1,0 +1,53 @@
+.k-categories {
+  padding: 30rpx 10rpx;
+  background-color: #fff;
+}
+
+.k-topbar {
+  padding: 0 10rpx;
+  font-size: 16px;
+  color: #999;
+  padding-bottom: 25rpx;
+}
+
+.k-topbar__title {
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding-left: 20rpx;
+}
+
+.k-category {
+  float: left;
+  font-size: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6rpx;
+  margin: 10rpx;
+  padding: 5rpx 18rpx;
+}
+
+.k-posts {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.k-posts::after {
+  border: none;
+}
+
+.k-post {
+  color: #333;
+  padding: 20px 15px;
+}
+
+.k-post__icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+.k-post-emp {
+  padding-top: 35px;
+  background-color: #fff;
+}

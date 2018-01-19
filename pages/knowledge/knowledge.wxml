@@ -1,0 +1,45 @@
+<view class="k-banner">
+  <navigator url="/pages/knowledge/kw-search/kw-search" class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <input type="text" class="weui-search-bar__input" />
+      </view>
+      <label class="weui-search-bar__label">
+        <icon class="weui-icon-search" type="search" size="14"></icon>
+        <view class="weui-search-bar__text">搜索汽车知识</view>
+      </label>
+    </view>
+  </navigator>
+</view>
+
+<view class="k-nav-blocks">
+  <block wx:for="{{grids}}" wx:for-item="group" wx:key="name">
+    <view class="k-nav-block">
+      <view class="k-intro weui-flex">
+        <view class="k-intro__info weui-flex__item" style="border-color: {{group.color}}">
+          <view class="k-intro__title" style="color: {{group.color}}">{{group.title}}</view>
+          <view class="k-intro__desc">{{group.desc}}</view>
+        </view>
+        <image class="k-intro__icon" src="{{group.icon}}" />
+      </view>
+
+      <view class="k-navs weui-grids">
+        <block wx:for="{{group.items}}" wx:for-item="g" wx:key="name">
+          <view class="k-nav-outer weui-grid">
+            <navigator class="k-nav-inner weui-flex" url="{{g.url}}" hover-class="k-nav_active">
+              <view class="k-nav-icon-wrap weui-flex" style="border: 1rpx solid {{g.icbg}};background-color: {{g.icbg}};">
+                <image class="k-nav-icon weui-grid__icon" src="{{g.icon}}" />
+              </view>
+              <view class="k-nav-item-wrap weui-flex__item">
+                <view class="weui-grid__label k-nav-label-m">{{g.name}}</view>
+                <view class="weui-grid__label k-nav-label-s">{{g.desc}}</view>
+              </view>
+            </navigator>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>
+
+<!-- <include src="/pages/common/footer.wxml" /> -->
